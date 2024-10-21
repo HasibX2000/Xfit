@@ -14,7 +14,7 @@
     <!-- Font Awesome (if used) -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
 
     <!-- Custom CSS -->
@@ -22,47 +22,88 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar__content">
-            <div class="navbar__logo">
-              <a href="index.html">
-                <img src="assets/images/logo.png" alt="XFit Logo" class="navbar__logo-img" />
-              </a>
-            </div>
-            <div class="navbar__menu-container">
-              <ul class="navbar__menu">
-                <li class="navbar__menu-item">
-                  <a href="#home" class="navbar__menu-link">Home</a>
-                </li>
-                <li class="navbar__menu-item">
-                  <a href="#about" class="navbar__menu-link">About</a>
-                </li>
-                <li class="navbar__menu-item">
-                  <a href="#services" class="navbar__menu-link">Services</a>
-                </li>
-                <li class="navbar__menu-item">
-                  <a href="#trainers" class="navbar__menu-link">Trainers</a>
-                </li>
-                <li class="navbar__menu-item">
-                  <a href="#contact" class="navbar__menu-link">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="navbar__social">
-              <a href="#" class="navbar__social-link"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="navbar__social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="navbar__social-link"><i class="fab fa-instagram"></i></a>
-            </div>
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container navbar__container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="XFit Logo" class="logo-small" />
+          </a>
+
+          <!-- Navigation Links -->
+          <ul class="navbar-nav navbar__menu">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trainers">Trainers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Social Icons -->
+          <div class="navbar__social">
+            <a href="#" class="navbar__social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="navbar__social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="navbar__social-link"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </nav>
+
+      <div class="container hero__content">
+        <div class="row align-items-center hero__main flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 hero__left">
+            <div class="hero__text">
+              <h1 class="hero__title">Transform Your Body,<br />Transform Your Life</h1>
+              <p class="hero__subtitle">Join XFit today and start your fitness journey</p>
+              <a href="#" class="hero__cta-button">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero__right">
+            <div class="hero__image-container">
+              <img src="assets/img/fitness-trainer.png" alt="Fitness Trainer" class="hero__image" />
+            </div>
+          </div>
+        </div>
+        <div class="row hero__bottom">
+          <div class="col-12">
+            <div class="hero__counter-section">
+              <div class="hero__counter-item">
+                <span class="hero__counter" data-count="1000">0</span>
+                <p class="hero__counter-text">Happy Clients</p>
+              </div>
+              <div class="hero__counter-item">
+                <span class="hero__counter" data-count="50">0</span>
+                <p class="hero__counter-text">Expert Trainers</p>
+              </div>
+              <div class="hero__counter-item">
+                <span class="hero__counter" data-count="100">0</span>
+                <p class="hero__counter-text">Fitness Programs</p>
+              </div>
+              <div class="hero__quote-section">
+                <blockquote class="hero__quote">
+                  "The only bad workout is the one that didn't happen."
+                  <footer class="hero__quote-footer">- Unknown</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main>
-      <!-- Add your main content sections here -->
+      <!-- Add other main content sections here -->
     </main>
 
     <!-- Footer -->
@@ -70,10 +111,14 @@
       <!-- Add your footer content here -->
     </footer>
 
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
