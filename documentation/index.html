@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XFit - Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="doc-wrapper">
+      <!-- Sidebar -->
+      <aside class="doc-sidebar">
+        <div class="doc-brand">
+          <img src="logo.png" alt="XFit" class="doc-logo" />
+        </div>
+
+        <nav class="doc-nav">
+          <ul>
+            <li><a href="#introduction" class="active">Introduction</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#file-structure">File Structure</a></li>
+            <li><a href="#modifications">Modifications</a></li>
+            <li><a href="#customization">Customization</a></li>
+            <li><a href="#credits">Credits</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="doc-content">
+        <section id="introduction" class="doc-section">
+          <h1>XFit - Modern Gym & Fitness HTML Template</h1>
+          <div class="doc-info">
+            <span>Version: 1.0.0</span>
+            <span>Created: September 2024</span>
+            <span>By: Akon M Hasib</span>
+          </div>
+
+          <div class="doc-card">
+            <h2>Template Information</h2>
+            <ul>
+              <li><strong>Name:</strong> XFit - Gym & Fitness Template</li>
+              <li><strong>Type:</strong> HTML Template</li>
+              <li><strong>Category:</strong> Fitness & Gym</li>
+              <li><strong>Author:</strong> Akon M Hasib</li>
+              <li><strong>Browser Support:</strong> Chrome, Firefox, Safari, Edge, Opera</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="getting-started" class="doc-section">
+          <h2>Getting Started</h2>
+
+          <div class="doc-card">
+            <h3>Requirements</h3>
+            <ul>
+              <li>Web Server (Apache, Nginx, etc.)</li>
+              <li>Text Editor (VS Code, Sublime Text, etc.)</li>
+              <li>Basic knowledge of HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="doc-card">
+            <h3>Installation</h3>
+            <ol>
+              <li>Extract the downloaded zip file</li>
+              <li>Upload the contents to your web server</li>
+              <li>Navigate to your domain</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="file-structure" class="doc-section">
+          <h2>File Structure</h2>
+          <div class="doc-card">
+            <pre class="code-block">
+📦 xfit-package/
+ ┣ 📂 HTML/                      # Main template files
+ ┃ ┣ 📂 assets/
+ ┃ ┃ ┣ 📂 css/
+ ┃ ┃ ┃ ┗ 📜 style.css
+ ┃ ┃ ┣ 📂 js/
+ ┃ ┃ ┃ ┗ 📜 script.js
+ ┃ ┃ ┣ 📂 img/
+ ┃ ┃ ┃ ┣ 📂 gallery/
+ ┃ ┃ ┃ ┣ 📂 programs/
+ ┃ ┃ ┃ ┣ 📂 testimonials/
+ ┃ ┃ ┃ ┣ 📜 logo.png
+ ┃ ┃ ┃ ┗ 📜 favicon.png
+ ┃ ┃ ┗ 📂 vendors/
+ ┃ ┃   ┣ 📂 bootstrap/
+ ┃ ┃   ┣ 📂 fontawesome/
+ ┃ ┃   ┣ 📂 aos/
+ ┃ ┃   ┣ 📂 swiper/
+ ┃ ┃   ┣ 📂 isotope/
+ ┃ ┃   ┗ 📂 fslightbox/
+ ┃ ┗ 📜 index.html
+ ┃
+ ┗ 📂 documentation/            # Documentation files
+   ┣ 📜 index.html
+   ┣ 📜 style.css
+   ┗ 📜 script.js</pre
+            >
+          </div>
+        </section>
+
+        <section id="modifications" class="doc-section">
+          <h2>Modifications</h2>
+
+          <div class="doc-card">
+            <h3>1. Changing Content</h3>
+            <p>
+              To modify the template content, look for these sections in
+              <code>HTML/index.html</code>:
+            </p>
+            <ul>
+              <li>Header/Logo: Update the logo image in header section</li>
+              <li>About Section: Modify text and image in <code>#about</code> section</li>
+              <li>Services: Edit cards in <code>#services</code> section</li>
+              <li>Schedule: Update class timings in <code>#schedule</code> section</li>
+              <li>Testimonials: Modify reviews in <code>#testimonials</code> section</li>
+              <li>Footer: Update contact info and links in footer section</li>
+            </ul>
+          </div>
+
+          <div class="doc-card">
+            <h3>2. Styling Changes</h3>
+            <p>Main styling variables are located in <code>assets/css/style.css</code>:</p>
+            <pre class="code-block">
+:root {
+    /* Colors */
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #334155;
+    --body-color: #ffffff;
+    
+    /* Typography */
+    --body-font: 'Inter', sans-serif;
+    --heading-font: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --section-spacing: 100px;
+    --container-width: 1320px;
+}</pre
+            >
+          </div>
+
+          <div class="doc-card">
+            <h3>3. Image Replacement</h3>
+            <p>Replace images in the following directories:</p>
+            <ul>
+              <li><code>assets/img/gallery/</code> - Gallery images</li>
+              <li><code>assets/img/programs/</code> - Program/service images</li>
+              <li><code>assets/img/testimonials/</code> - Testimonial profile pictures</li>
+              <li><code>assets/img/logo.png</code> - Main logo</li>
+              <li><code>assets/img/favicon.png</code> - Browser favicon</li>
+            </ul>
+            <p>Recommended image dimensions:</p>
+            <ul>
+              <li>Logo: 180x60px</li>
+              <li>Gallery: 800x600px</li>
+              <li>Programs: 600x400px</li>
+              <li>Testimonials: 100x100px (square)</li>
+            </ul>
+          </div>
+
+          <div class="doc-card">
+            <h3>4. Contact Information</h3>
+            <p>Update contact details in these locations:</p>
+            <ul>
+              <li>Header phone number</li>
+              <li>CTA section contact button</li>
+              <li>Footer contact information</li>
+              <li>Social media links in footer</li>
+            </ul>
+          </div>
+
+          <div class="doc-card">
+            <h3>5. Custom JavaScript</h3>
+            <p>Modify functionality in <code>assets/js/script.js</code>:</p>
+            <ul>
+              <li>Mobile menu behavior</li>
+              <li>Smooth scrolling</li>
+              <li>Testimonial slider settings</li>
+              <li>Animation triggers</li>
+              <li>Schedule tab functionality</li>
+            </ul>
+          </div>
+
+          <div class="doc-card">
+            <h3>6. Performance Tips</h3>
+            <ul>
+              <li>Optimize images before uploading</li>
+              <li>Minify CSS and JavaScript files for production</li>
+              <li>Enable browser caching for assets</li>
+              <li>Use appropriate image formats (WebP when possible)</li>
+              <li>Lazy load images below the fold</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="customization" class="doc-section">
+          <h2>Customization</h2>
+
+          <div class="doc-card">
+            <h3>Colors</h3>
+            <p>To change the theme colors, modify the CSS variables in style.css:</p>
+            <pre class="code-block">
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #334155;
+}</pre
+            >
+          </div>
+        </section>
+
+        <section id="credits" class="doc-section">
+          <h2>Credits</h2>
+          <div class="doc-card">
+            <ul>
+              <li>Bootstrap 5</li>
+              <li>Font Awesome Icons</li>
+              <li>Google Fonts</li>
+              <li>AOS Library</li>
+              <li>Swiper.js</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
