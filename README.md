@@ -51,13 +51,13 @@ A modern, responsive HTML template designed for gyms, fitness centers, and perso
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/hasibx2000/xfit-template.git
+git clone https://github.com/hasibx2000/xfit.git
 ```
 
 ### Navigate to the project directory:
 
 ```bash
-cd xfit-template
+cd xfit
 ```
 
 ### Open `index.html` in your browser to view the template.
