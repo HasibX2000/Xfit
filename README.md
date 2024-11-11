@@ -50,12 +50,15 @@ A modern, responsive HTML template designed for gyms, fitness centers, and perso
 
 ### Clone the repository:
 
-bash
-git clone https://github.com/yourusername/xfit-template.git
+```bash
+git clone https://github.com/hasibx2000/xfit-template.git
+```
 
 ### Navigate to the project directory:
 
-`cd xfit-template`
+```bash
+cd xfit-template
+```
 
 ### Open `index.html` in your browser to view the template.
 
@@ -76,9 +79,14 @@ git clone https://github.com/yourusername/xfit-template.git
 
 The template uses CSS variables for easy color customization. Edit the `:root` variables in `style.css`:
 
-- --primary-color: #your-color;
-- --secondary-color: #your-color;
-- / ... other variables /
+```bash
+css
+:root {
+--primary-color: #your-color;
+--secondary-color: #your-color;
+/ ... other variables /
+}
+```
 
 ### Images
 
